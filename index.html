@@ -10,14 +10,32 @@
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+      <style>
+        footer {
+          clear: both;
+          text-align: center;
+          position: fixed;
+          bottom: 0px;
+          width: 100%;
+          height: 70px;
+          padding-top: 25px;
+          margin-top: 10px;
+          background: rgb(248, 249, 250);
+          color: rgb(124,124,125);
+        }       
+      </style>
+
       <title>John Wilson</title>
 
     </head>
 
-    <body>
+    <body style="background-image: url(circles-dark.png);">
     
-    <!-- Container div -->
-    <div class="container">
+    
 
       <!-- BootStrap NavBar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,29 +48,59 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#"> About <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#"> Portfolio </a>
-          <a class="nav-item nav-link" href="#"> Contact Me </a>
+          <a class="nav-item nav-link active" href="index.html"> About <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="portfolio.html"> Portfolio </a>
+          <a class="nav-item nav-link" href="contact.html"> Contact Me </a>
         </div>
       </div>
 
     </nav>
 
-    <div class="row">
+    <br>
+
+    <!-- Container div -->
+    <div class="container">
+
+    <div class="row"> <!-- row 1 -->
       <div class="col-md-8">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title"> About Me </h5>
-            <img scr="Images/ME.jpg" class="img-thumbnail">
+            <h4 class="card-title"> About Me </h4>
+            <hr>
+            <img src="Images/ME.jpg" class="rounded float-left img-fluid" alt="ME" width="275" height="200" style="margin-right:10px;">
             <p class="card-text"> 
               My name is John Wilson I am a student at The University of Akron, studying Computer Infomation Systems. I am an aspring front end web developer, with the hopes of working for a small company or start up in the Tech Industry using the skills I am learning in web development.
             </p>
-            
+            <p class="card-text">
+              My interests include the Tech Industry, and consumer electonics. I like keeping with new tech releases and general tech news. Besides tech I like being active either by working out, playing sports, or going for hikes. I also have growing love for photography and videography, two hobbies I hope to pursue this year.
+            </p>
           </div>
         </div>
       </div>
 
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+            <h4 class="card-title">Connect With Me</h4> 
+            <hr>  
+            <a href="https://github.com/John-Wilson88" target="_blank"> <img src="Images/github-128.png" alt="Github" width="70" height="70" class="rounded" style="margin-bottom: 5px;"> </a>
 
-    </div>
+            <a href="https://www.linkedin.com/in/john-wilson-7516b3b7/" target="_blank"> <img src="Images/linkedin-128.png" alt="linkedIn" width="70" height="70" class="rounded" style="margin-bottom: 5px;"> </a>
+
+            <a  href="https://stackoverflow.com/users/9195508/john-wilson" target="_blank"> <img src="Images/stackoverflow-128.png" alt="Stackoverflow" width="70" height="70" class="rounded" style="margin-bottom: 5px;"> </a>
+          </div>
+          </div>  
+        </div> 
+      </div>
+
+    </div>  <!-- end row 1 div -->
+
+    <br>
+
+    </div> <!-- End Container div-->
+
+    <footer> &copy; Copyright 2018 John Wilson </footer>
+    
     </body>
 </html>
